@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>拓人ブロック</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <img src="takuto-meshi.png" class="icon">
+      <p id="level"></p>
+      <div class="blocks">
+        <div class="block">
+          [某OSS]の脆弱性報告(現在非公開)
+        </div>
+        <div class="block">
+          株式会社エーアイセキュリティラボに入社
+        </div>
+        <div class="block">
+          最愛の妻サウンとの同棲スタート
+        </div>
+        <div class="block">
+          Djangoの脆弱性報告(CVE-2022-34265)
+        </div>
+        <div class="block">
+          慶應義塾大学総合政策学部にAO入試で合格 / 卒業
+        </div>
+        <div class="block">
+          コードアカデミー一期生1号として入学 / 卒業
+        </div>
+      </div>
+    </main>
+    <script>
+      const blocks = document.getElementsByClassName("block");
+      document.getElementById("level").innerText = "Level " + blocks.length;
+      let c = 130;
+      for (let i = 0; i < blocks.length; i++) {
+        blocks[i].style.backgroundColor = `rgb(${c-15},${c+15},${c+30})`;
+        c += 18;
+      }
+    </script>
+  </body>
+</html>
