@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <img src="takuto-meshi.png" class="icon">
+      <img src="takuto.png" class="icon">
       <h2>吉開 拓人 <span id="age"></span></h2>
       <p id="level"></p>
       <div class="blocks">
@@ -19,7 +19,7 @@
           株式会社エーアイセキュリティラボに入社
         </div>
         <div class="block">
-          最愛の妻サウンとの同棲スタート
+          最愛の妻サウンと結婚
         </div>
         <div class="block">
           Djangoの脆弱性報告(CVE-2022-34265)
@@ -38,7 +38,7 @@
       let c = 130;
       for (let i = 0; i < blocks.length; i++) {
         blocks[i].style.backgroundColor = `rgb(${c-15},${c+15},${c+30})`;
-        c += 18;
+        c += 105 / blocks.length;
       }
       const birthday = {
       year: 1997,

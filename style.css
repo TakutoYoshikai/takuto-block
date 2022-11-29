@@ -16,6 +16,7 @@ h2 {
   height: 200px;;
   border-radius: 50%;
   border: 2px solid #333;
+  object-fit: cover;
   
 }
 #level {
