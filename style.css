@@ -30,6 +30,7 @@ main {
   border-radius: 30px;
 }
 
+
 .blocks {
   border-bottom: solid 3px #333;
 }
@@ -43,3 +44,25 @@ main {
   font-weight: bold;
 }
 
+@media screen and (max-width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4be9b;
+  }
+  main {
+    max-width: 90%;
+    width: 90%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  #level {
+    font-size: 18px;
+  }
+  .block {
+    font-size: 12px;
+  }
+}
