@@ -8,7 +8,7 @@
   <body>
     <main>
       <img src="takuto-meshi.png" class="icon">
-      <h2>吉開 拓人 24歳</h2>
+      <h2>吉開 拓人 <span id="age"></span></h2>
       <p id="level"></p>
       <div class="blocks">
         <div class="block">
@@ -39,6 +39,28 @@
         blocks[i].style.backgroundColor = `rgb(${c-15},${c+15},${c+30})`;
         c += 18;
       }
+      const birthday = {
+      year: 1997,
+      month: 12,
+      date: 13
+    };
+
+    function getAge(birthday){
+
+        var today = new Date();
+
+        var thisYearsBirthday = new Date(today.getFullYear(), birthday.month-1, birthday.date);
+
+        //年齢
+        var age = today.getFullYear() - birthday.year;
+
+        if(today < thisYearsBirthday){
+            age--;
+        }
+
+        return age;
+    }
+      document.getElementById("age").innerText = getAge(birthday) + "歳";
     </script>
   </body>
 </html>
